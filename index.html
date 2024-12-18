@@ -23,13 +23,9 @@
             top: 10px;
             right: 10px;
             z-index: 1000;
-            background-color: #ffffff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 8px;
             font-family: Arial, sans-serif;
             font-size: 14px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block;
         }
 
         /* Fix contact form text visibility */
@@ -143,8 +139,10 @@
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                pageLanguage: 'en', // default language
+                includedLanguages: 'en,es,fr,de,it', // Add languages you want to include
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Show as a simple button with "G"
+                autoDisplay: false // Prevent the auto-display of the widget box
             }, 'google_translate_element');
         }
     </script>
