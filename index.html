@@ -1,0 +1,289 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <title>A Beginner's Guide to Memecoins</title>
+    <!-- CSS FILES -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="css/templatemo-ebook-landing.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inline Styles -->
+    <style>
+        /* Styling for Google Translate Dropdown */
+        #google_translate_element {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Fix contact form text visibility */
+        .custom-form input,
+        .custom-form textarea,
+        .custom-form p {
+            color: #000 !important; /* Ensures text is visible */
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero-image-wrap img {
+                width: 100%;
+                height: auto;
+            }
+
+            #google_translate_element {
+                top: 5px;
+                right: 5px;
+                font-size: 12px;
+            }
+
+            .custom-form textarea {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-section h1 {
+                font-size: 24px;
+            }
+
+            .hero-section h6 {
+                font-size: 16px;
+            }
+
+            .custom-form input,
+            .custom-form textarea {
+                font-size: 14px;
+            }
+        }
+
+        /* Increase line spacing for Discover section */
+        .book-section-info p {
+            line-height: 1.8;
+            color: #fff; /* Set text color to white */
+        }
+
+        /* Uniform Background Color */
+        body, main, section {
+            background-color: #ff6600; /* Updated bright orange */
+        }
+
+        /* Custom Form Styling */
+        .custom-form {
+            background-color: #ff6600; /* Updated bright orange */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box-shadow for a professional look */
+            border: 2px solid #fff; /* White border for a clean look */
+        }
+
+        .custom-form input,
+        .custom-form textarea {
+            border: 1px solid #fff;
+            background-color: #fff;
+            color: #333;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .custom-form input::placeholder,
+        .custom-form textarea::placeholder {
+            color: #888;
+        }
+
+        .custom-form button {
+            background-color: #fff;
+            color: #ff6600; /* Updated bright orange */
+            padding: 15px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%; /* Full width for a clean look */
+            margin-top: 15px; /* Adds spacing from the inputs */
+        }
+
+        .custom-form button:hover {
+            background-color: #ff6600;
+            color: white;
+        }
+
+        /* Updated Sign Up Button to be black */
+        .custom-form .btn-signup {
+            background-color: #000;
+            color: #fff;
+            border: none;
+        }
+
+        .custom-form .btn-signup:hover {
+            background-color: #333;
+        }
+
+        /* Orange Divider Section with Reviews and Contact Info */
+        .bg-orange-500 {
+            background-color: #ff6600; /* Updated bright orange */
+        }
+    </style>
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+</head>
+<body>
+    <!-- Google Translate Dropdown -->
+    <div id="google_translate_element"></div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb-5 pb-5 pb-lg-0 mb-lg-0 text-center text-lg-start">
+                        <h6 class="text-2xl font-bold">Introducing ebook</h6>
+                        <h1 class="text-white mb-4 text-5xl font-extrabold">A Beginner's Guide to Memecoins</h1>
+                        <a class="btn custom-btn smoothscroll me-3 text-lg font-bold py-2 px-4 bg-blue-500 text-white rounded-lg" href="#section_2" onclick="toggleDiscover()">Discover More</a>
+                        <a class="btn custom-btn smoothscroll me-3 text-lg font-bold py-2 px-4 bg-green-500 text-white rounded-lg" href="#section_2" onclick="toggleSignUpForm()">Download eBook</a>
+                    </div>
+                    <div class="hero-image-wrap col-lg-6 col-md-12 col-sm-12 mt-3 mt-lg-0 text-center">
+                        <img alt="education online books" class="hero-image img-fluid" src="images/1i3W3AO9sWPPx2akZt5ck-transformed.png" style="max-width: 40%;"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About the Book Section -->
+        <section class="book-section section-padding hidden" id="section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <img alt="Illustration of a person reading an ebook about memecoins" class="img-fluid" height="400" src="https://storage.googleapis.com/a1aa/image/HZpUuebMfJpQsUztNReSG1eJVAjBsB5eHd56x2FDdxVo28gfE.jpg" style="max-width: 80%;" width="400"/>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="book-section-info hidden" id="discoverContent">
+                            <h6 class="text-2xl font-bold">Modern &amp; Creative</h6>
+                            <h2 class="mb-4 text-4xl font-extrabold">About The Book</h2>
+                            <p>This book provides a comprehensive introduction to the fascinating world of memecoins. Learn the basics, explore trends, and understand the opportunities and risks in this rapidly evolving space.</p>
+                            <p>Get insights and tips to navigate the memecoin market effectively. Perfect for beginners looking to dive into the crypto world!</p>
+                        </div>
+                        <div class="hidden" id="signUpForm">
+                            <h6 class="text-2xl font-bold">Sign Up to Download</h6>
+                            <form action="send-email.php" class="custom-form bg-white shadow" method="post" role="form">
+                                <div class="text-center mb-4">
+                                    <h2 class="mb-1 text-3xl font-extrabold">Sign Up Form</h2>
+                                </div>
+                                <div class="mb-3">
+                                    <input class="form-control" id="name" name="name" placeholder="Your Name" required="" type="text"/>
+                                </div>
+                                <div class="mb-3">
+                                    <input class="form-control" id="email" name="email" placeholder="Your Email" required="" type="email"/>
+                                </div>
+                                <div class="mb-3">
+                                    <input class="form-control" id="phone" name="phone" placeholder="Your Phone Number" required="" type="text"/>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Your Message" required="" rows="5"></textarea>
+                                </div>
+                                <!-- Updated the button to match the others -->
+                                <button class="btn btn-signup form-control rounded-lg" type="submit">Submit</button>
+                            </form>
+                            <div class="hidden text-center mt-4" id="confirmationMessage">
+                                <i class="fas fa-check-circle text-green-500 text-4xl"></i>
+                                <p class="mt-2">Thank you! Your eBook will be delivered within 24 hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Orange Divider Section with Reviews and Contact Info -->
+        <section class="bg-orange-500 py-8" id="reviews-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-left">
+                        <h2 class="text-3xl font-extrabold text-white mb-4">What Our Readers Say</h2>
+                        <div class="flex justify-start">
+                            <i class="fas fa-star text-yellow-400 text-2xl mx-1"></i>
+                            <i class="fas fa-star text-yellow-400 text-2xl mx-1"></i>
+                            <i class="fas fa-star text-yellow-400 text-2xl mx-1"></i>
+                            <i class="fas fa-star text-yellow-400 text-2xl mx-1"></i>
+                            <i class="fas fa-star text-yellow-400 text-2xl mx-1"></i>
+                        </div>
+                        <p class="text-white mt-4">"A must-read for anyone interested in the world of memecoins!"</p>
+                        <div class="mt-8 text-white">
+                            <h6 class="text-2xl font-bold">Get in Touch</h6>
+                            <p class="mb-3"><i class="bi-geo-alt me-2"></i> Dallas, Texas, USA</p>
+                            <p class="mb-2"><a class="contact-link text-white" href="tel: 123-456-7890">123-456-7890</a></p>
+                            <p><a class="contact-link text-white" href="mailto:info@memecoins.com">info@memecoins.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        function toggleDiscover() {
+            const discoverContent = document.getElementById('discoverContent');
+            const signUpForm = document.getElementById('signUpForm');
+            const section2 = document.getElementById('section_2');
+            
+            if (discoverContent.classList.contains('hidden')) {
+                discoverContent.classList.remove('hidden');
+                signUpForm.classList.add('hidden');
+                section2.classList.remove('hidden');
+            } else {
+                discoverContent.classList.add('hidden');
+                section2.classList.add('hidden');
+            }
+        }
+
+        function toggleSignUpForm() {
+            const signUpForm = document.getElementById('signUpForm');
+            const discoverContent = document.getElementById('discoverContent');
+            const section2 = document.getElementById('section_2');
+            
+            if (signUpForm.classList.contains('hidden')) {
+                signUpForm.classList.remove('hidden');
+                discoverContent.classList.add('hidden');
+                section2.classList.remove('hidden');
+            } else {
+                signUpForm.classList.add('hidden');
+                section2.classList.add('hidden');
+            }
+        }
+
+        document.getElementById('signUpForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Simulate form submission
+            setTimeout(function() {
+                document.getElementById('signUpForm').classList.add('hidden');
+                document.getElementById('confirmationMessage').classList.remove('hidden');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
