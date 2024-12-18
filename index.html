@@ -140,9 +140,11 @@
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en', // default language
-                includedLanguages: 'en,es,fr,de,it,ja,ko,pt,zh-CN', // All available languages
+                includedLanguages: 'en,sv,es,fr,de,it,ja,ko,pt,zh-CN', // Include languages (including Swedish)
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Simple "G" button
-                autoDisplay: false // Prevent the auto-display of the widget box
+                autoDisplay: false, // Prevent the auto-display of the widget box
+                gaTrack: true, // Optional: Enable tracking for analytics
+                gaId: 'UA-XXXXX-Y' // Optional: Replace with your Google Analytics ID
             }, 'google_translate_element');
         }
     </script>
